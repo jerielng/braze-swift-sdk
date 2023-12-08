@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.source            = {
     :http => 'https://github.com/jerielng/braze-swift-sdk/releases/download/7.3.0/BrazePushStory.zip',
-    :sha256 => '6323b9efbb548a504a72a375768c0f347e9bd9258bc277cb3022fdd0d399fb3c'
+    :sha256 => '3f4f2c9d6fb563b68c46e1227393c56b047f7986731aca75227e2ee5e04004be'
   }
 
   s.swift_version           = '5.0'

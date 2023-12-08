@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.source            = {
     :http => 'https://github.com/jerielng/braze-swift-sdk/releases/download/7.3.0/BrazeNotificationService.zip',
-    :sha256 => '63ddf115344696314d5985f3ced61b704410c297ef471b82d4ef6410c912ef2d'
+    :sha256 => '24b6abf2f3e76adeee2f0c387e88eb6393ebcb0f2d78988a7c59eacf92dea3d8'
   }
 
   s.swift_version           = '5.0'

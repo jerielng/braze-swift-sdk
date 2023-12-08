@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.source            = {
     :http => 'https://github.com/jerielng/braze-swift-sdk/releases/download/7.3.0/BrazeLocation.zip',
-    :sha256 => 'c8ec7ed44a1192912bc859ea35cf7f151a2896baf0cea8e7af148e4c23f24496'
+    :sha256 => 'f1ce9e26f8206f6275c34055cdb426305363d12e44312be7ed90c9cf108bbff7'
   }
 
   s.swift_version           = '5.0'
