@@ -1,3 +1,20 @@
+## NEXT
+
+#### Added
+- Adds two alternative repositories to support specialized integration options. For instructions on how to leverage them, refer to their respective READMEs:
+  - [braze-inc/braze-swift-sdk-prebuilt-static](https://github.com/braze-inc/braze-swift-sdk-prebuilt-static) which provides all Braze modules as static XCFrameworks.
+  - [braze-inc/braze-swift-sdk-prebuilt-dynamic](https://github.com/braze-inc/braze-swift-sdk-prebuilt-dynamic) which provides all Braze modules as dynamic XCFrameworks.
+- In-App Message assets from URLs containing the query parameter `cache=false` will not be prefetched.
+  - Additionally, when presented as a part of In-App Messages or Content Cards, those URLs will be fetched using the [`URLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData`](https://developer.apple.com/documentation/foundation/nsurlrequest/cachepolicy/reloadignoringlocalandremotecachedata) caching policy, which always requests a fresh version from the source and ignores any cached versions.
+- Adds privacy manifests for BrazeKit and BrazeLocation to describe Braze's data collection policies. For more details, refer to [Apple's documentation](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests) on privacy manifests.
+  - More fine-tuned configurations to manage your data collection practices will be made available in a future release.
+
+#### Fixed
+- Fixes XCFrameworks headers to use the `#import` syntax instead of `@import` for compatibility with Objective-C++ contexts.
+- Fixes the push token tag validation during Live Activity registration, accepting strings up to 256 bytes instead of 255 bytes.
+- `Braze.ContentCards.unviewedCards` no longer includes Control cards to bring parity with Android and Web.
+- Fixes an Objective-C metaclass crash that occurs when initializing a custom subclass of certain BrazeUI views.
+
 ## 7.3.0
 
 #### Added
@@ -9,10 +26,10 @@
 
 ## 7.2.0
 
-#### Added
+##### Added
 - Exposes the `BrazePushStory.NotificationViewController.didReceive` methods for custom handling of push story notification events.
 
-#### Fixed
+##### Fixed
 - Resolves an issue for in-app messages with buttons where tapping on the body would incorrectly execute the button's click action.
   - Now, when you tap on the body of an in-app message with buttons, no event should occur.
 - Resolves a potential deadlock under rare circumstances in BrazeUI's In-App messages presentation.

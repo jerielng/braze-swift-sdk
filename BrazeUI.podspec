@@ -8,14 +8,14 @@ Pod::Spec.new do |s|
   s.license           = { :type => 'Commercial' }
   s.authors           = 'Braze, Inc.'
 
-  s.source            = { :git => 'https://github.com/braze-inc/braze-swift-sdk.git', :tag => '7.3.0' }
+  s.source            = { :git => 'https://github.com/jerielng/braze-swift-sdk.git', :tag => '7.3.0' }
 
   s.swift_version           = '5.0'
   s.ios.deployment_target   = '11.0'
-  s.static_framework        = true
 
   s.source_files            = 'Sources/BrazeUI/**/*.swift'
   s.resource_bundles        = { 'BrazeUI' => ['Sources/BrazeUI/Resources/**/*'] }
+  s.static_framework        = true
 
   s.dependency 'BrazeKit', '7.3.0'
 

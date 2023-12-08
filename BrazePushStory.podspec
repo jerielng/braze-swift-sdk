@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.authors           = 'Braze, Inc.'
 
   s.source            = {
-    :http => 'https://github.com/braze-inc/braze-swift-sdk/releases/download/7.3.0/BrazePushStory.zip',
-    :sha256 => '0c37ca728ba0a5798efd412f254c26827f63f21044642993a004d80c9866d510'
+    :http => 'https://github.com/jerielng/braze-swift-sdk/releases/download/7.3.0/BrazePushStory.zip',
+    :sha256 => '6323b9efbb548a504a72a375768c0f347e9bd9258bc277cb3022fdd0d399fb3c'
   }
 
   s.swift_version           = '5.0'
