@@ -1,5 +1,6 @@
 Pod::Spec.new do |s|
-  s.name              = 'BrazeUI'
+  s.name              = 'BrazeUIDev'
+  s.module_name       = 'BrazeUI'
   s.version           = '7.3.0'
   s.summary           = 'Braze-provided user interface library for In-App Messages and Content Cards.'
 
@@ -17,7 +18,7 @@ Pod::Spec.new do |s|
   s.resource_bundles        = { 'BrazeUI' => ['Sources/BrazeUI/Resources/**/*'] }
   s.static_framework        = true
 
-  s.dependency 'BrazeKit', '7.3.0'
+  s.dependency 'BrazeKitDev', '7.3.0'
 
   s.pod_target_xcconfig     = { 'DEFINES_MODULE' => 'YES' }
 end

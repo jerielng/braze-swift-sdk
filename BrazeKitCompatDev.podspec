@@ -1,5 +1,6 @@
 Pod::Spec.new do |s|
-  s.name              = 'BrazeKitCompat'
+  s.name              = 'BrazeKitCompatDev'
+  s.module_name       = 'BrazeKitCompat'
   s.version           = '7.3.0'
   s.summary           = 'Compatibility library for users migrating from AppboyKit.'
 
@@ -18,8 +19,8 @@ Pod::Spec.new do |s|
   s.public_header_files     = 'Sources/BrazeKitCompat/include/*.h'
   s.static_framework        = true
 
-  s.dependency 'BrazeKit', '7.3.0'
-  s.dependency 'BrazeLocation', '7.3.0'
+  s.dependency 'BrazeKitDev', '7.3.0'
+  s.dependency 'BrazeLocationDev', '7.3.0'
 
   s.pod_target_xcconfig     = { 'DEFINES_MODULE' => 'YES' }
 end
